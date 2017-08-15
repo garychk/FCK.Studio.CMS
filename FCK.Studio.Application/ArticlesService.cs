@@ -29,6 +29,7 @@ namespace FCK.Studio.Application
                 .Include(entity => entity.CategoryId)
                 .ToList();
             return result;
+
         }
     }
 
