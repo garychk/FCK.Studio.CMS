@@ -9,10 +9,22 @@ namespace FCK.Studio.Utility
 {
     public class MailHelper
     {
-        public static string MailServer { get; set; }
-        public static string MailAcount { get; set; }
-        public static string MailPassword { get; set; }
-        public static string SendEmail(string MailsTo, string MailSubject, string MailBody)
+        public string MailServer { get; set; }
+        public string MailAcount { get; set; }
+        public string MailPassword { get; set; }
+        /// <summary>
+        /// 邮件服务器构造函数
+        /// </summary>
+        /// <param name="_MailServer"></param>
+        /// <param name="_MailAcount"></param>
+        /// <param name="_MailPassword"></param>
+        public MailHelper(string _MailServer,string _MailAcount,string _MailPassword)
+        {
+            MailServer = _MailServer;
+            MailAcount = _MailAcount;
+            MailPassword = _MailPassword;
+        }
+        public string SendEmail(string MailsTo, string MailSubject, string MailBody)
         {
             string result = "";
             try
