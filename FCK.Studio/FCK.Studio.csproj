@@ -62,6 +62,7 @@
     <Compile Include="Repositories\IRepository.cs" />
     <Compile Include="Repositories\Repository.cs" />
     <Compile Include="Utility\FileHelper.cs" />
+    <Compile Include="Utility\HttpHelper.cs" />
     <Compile Include="Utility\MailHelper.cs" />
   </ItemGroup>
   <ItemGroup>
