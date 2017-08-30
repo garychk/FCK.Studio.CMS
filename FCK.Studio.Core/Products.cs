@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace FCK.Studio.Core
 {
-    public class Products : Entity<int>, IHasCreationTime, IMustHaveTenant, IStandardObjModel<int>
+    public class Products : Entity<int>, IHasCreationTime, IMustHaveTenant, IStandardObjModel<int>, ICreationAudited
     {
         public int CategoryId { get; set; }
         [ForeignKey("CategoryId")]
@@ -27,5 +27,11 @@ namespace FCK.Studio.Core
         public string Pictures { get; set; }
         public decimal Price { get; set; }
         public decimal Discount { get; set; }
+
+        public long? CreatorUserId { get; set; }
+        public Products()
+        {
+            CreationTime = DateTime.Now;
+        }
     }
 }

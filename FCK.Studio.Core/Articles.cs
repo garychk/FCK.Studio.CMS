@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace FCK.Studio.Core
 {
-    public class Articles : Entity<int>, IHasCreationTime, IMustHaveTenant, IStandardObjModel<int>
+    public class Articles : Entity<int>, IHasCreationTime, IMustHaveTenant, IStandardObjModel<int>, ICreationAudited
     {
         public int CategoryId { get; set; }
         [ForeignKey("CategoryId")]
@@ -23,6 +23,8 @@ namespace FCK.Studio.Core
         public int TenantId { get; set; }
 
         public string Title { get; set; }
+
+        public long? CreatorUserId { get; set; }
 
         public Articles()
         {

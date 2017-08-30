@@ -1,9 +1,5 @@
 ﻿using FCK.Studio.Application;
 using FCK.Studio.Core;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 
 namespace FCK.Studio.Web.Controllers
@@ -28,6 +24,7 @@ namespace FCK.Studio.Web.Controllers
             //obj.Title = "test";
             //Article.Reposity.Insert(obj);
             var lists = Article.GetArticleWithCate(1, 10, (A => A.CategoryId == 1));
+            Utility.MailHelper oMail = new Utility.MailHelper("","","");
             return View(lists);
         }
     }
