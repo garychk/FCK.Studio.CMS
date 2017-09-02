@@ -12,10 +12,10 @@ namespace FCK.Studio.Application
 {
     public class ArticlesService: FCKStudioAppBase, IArticlesService
     {
-        public readonly Repository<Articles, int> Reposity;
+        public readonly Repository<Articles, long> Reposity;
         public ArticlesService()
         {
-            Reposity = new Repository<Articles, int>(dbContext, dbContext.Articles);
+            Reposity = new Repository<Articles, long>(dbContext, dbContext.Articles);
         }
         
         public async Task<ResultDto<List<Articles>>> GetArticleWithCate(int PageIndex, int PageSize, Expression<Func<Articles, bool>> predicate)

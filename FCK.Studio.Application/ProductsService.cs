@@ -5,10 +5,10 @@ namespace FCK.Studio.Application
 {
     public class ProductsService : FCKStudioAppBase
     {
-        public readonly Repository<Products, int> Reposity;
+        public readonly Repository<Products, long> Reposity;
         public ProductsService()
         {
-            Reposity = new Repository<Products, int>(dbContext, dbContext.Products);
+            Reposity = new Repository<Products, long>(dbContext, dbContext.Products);
         }
     }
 }
