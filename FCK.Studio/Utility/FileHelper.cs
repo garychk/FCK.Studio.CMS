@@ -51,7 +51,7 @@ namespace FCK.Studio.Utility
                     return false;
                 }
             }
-            catch (Exception e)
+            catch
             {
                 return false;
             }

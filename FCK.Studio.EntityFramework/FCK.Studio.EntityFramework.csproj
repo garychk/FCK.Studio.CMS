@@ -72,6 +72,10 @@
     <Compile Include="Migrations\201709020120389_TableUpdate.Designer.cs">
       <DependentUpon>201709020120389_TableUpdate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201709020131126_AddTableAdmin.cs" />
+    <Compile Include="Migrations\201709020131126_AddTableAdmin.Designer.cs">
+      <DependentUpon>201709020131126_AddTableAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -100,6 +104,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201709020120389_TableUpdate.resx">
       <DependentUpon>201709020120389_TableUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709020131126_AddTableAdmin.resx">
+      <DependentUpon>201709020131126_AddTableAdmin.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

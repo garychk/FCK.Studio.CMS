@@ -32,7 +32,6 @@ namespace FCK.Studio.Core
         [Column(TypeName = "money")]
         public decimal Price { get; set; }
         public decimal Discount { get; set; }
-
         public long? CreatorUserId { get; set; }
         public Products()
         {
