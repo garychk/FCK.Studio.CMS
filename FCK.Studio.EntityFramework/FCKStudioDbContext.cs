@@ -15,6 +15,7 @@ namespace FCK.Studio.EntityFramework
         public virtual IDbSet<Articles> Articles { get; set; }
         public virtual IDbSet<Products> Products { get; set; }
         public virtual IDbSet<Categories> Categories { get; set; }
+        public virtual IDbSet<Admins> Admins { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
