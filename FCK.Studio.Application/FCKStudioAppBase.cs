@@ -2,11 +2,15 @@
 {
     public class FCKStudioAppBase
     {
-        protected EntityFramework.FCKStudioDbContext dbContext = new EntityFramework.FCKStudioDbContext();
+        protected EntityFramework.FCKStudioDbContext dbContext;
+        public FCKStudioAppBase()
+        {
+            dbContext = new EntityFramework.FCKStudioDbContext("FCKStudioDbContext");
+        }
         ~FCKStudioAppBase()
         {
             dbContext.Dispose();
         }
     }
-    
+
 }

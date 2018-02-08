@@ -8,8 +8,8 @@ namespace FCK.Studio.EntityFramework
 
     public partial class FCKStudioDbContext : DbContext
     {
-        public FCKStudioDbContext()
-            : base("name=FCKStudioDbContext")
+        public FCKStudioDbContext(string ConnStr)
+            : base("name="+ ConnStr + "")
         {
         }
         public virtual IDbSet<Articles> Articles { get; set; }

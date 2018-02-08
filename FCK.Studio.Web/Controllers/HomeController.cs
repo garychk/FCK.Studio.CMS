@@ -1,5 +1,10 @@
-﻿using FCK.Studio.Application;
+﻿using AutoMapper;
+using FCK.Studio.Application;
 using FCK.Studio.Core;
+using FCK.Studio.Dto;
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 using System.Web.Mvc;
 
 namespace FCK.Studio.Web.Controllers
@@ -9,23 +14,22 @@ namespace FCK.Studio.Web.Controllers
         // GET: Home
         public ActionResult Index()
         {
-            //CategoriesService Category = new CategoriesService();
-            //Categories obj = Category.Reposity.Get(1);
-            //obj.CategoryIndex = "A";
-            //obj.Layout = "Article";
-            //Category.Reposity.Update(obj);
-            //var model = Category.Reposity.Get(1);
-
-            ArticlesService Article = new ArticlesService();
-            Articles obj = new Articles();
-            var modle = Article.Reposity.GetAsync(1);
+            ArticlesService Article = new ArticlesService();            
+            //Task.Run(async () =>
+            //{
+            //    var modle = await Article.Reposity.GetAsync(1);
+            //});
+            //Articles obj = new Articles();
             //obj.CategoryId = 1;
-            //obj.Contents = "";
-            //obj.Title = "test";
+            //obj.Contents = "Contents" + DateTime.Now.ToString();
+            //obj.Title = "Test" + DateTime.Now.ToString();
             //Article.Reposity.Insert(obj);
-            var lists = Article.GetArticleWithCate(1, 10, (A => A.CategoryId == 1));
-            Utility.MailHelper oMail = new Utility.MailHelper("","","");
-            return View(lists);
+            var result = Article.GetArticleWithCate(1, 10, (A => A.CategoryId == 1));
+
+            //Mapper.Initialize(x => x.CreateMap<Articles, Dto.Articles>());
+            //var lists = Mapper.Map<ResultDto<List<Dto.Articles>>>(result);
+
+            return View(result);
         }
     }
 }
