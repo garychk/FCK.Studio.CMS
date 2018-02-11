@@ -8,7 +8,7 @@ namespace FCK.Studio.Application
         public readonly Repository<Products, long> Reposity;
         public ProductsService()
         {
-            Reposity = new Repository<Products, long>(dbContext, dbContext.Products);
+            Reposity = new Repository<Products, long>(dbContext);
         }
     }
 }

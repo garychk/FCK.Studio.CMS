@@ -5,10 +5,10 @@ namespace FCK.Studio.Application
 {
     public class CategoriesService: FCKStudioAppBase
     {
-        public readonly Repository<Categories, int> Reposity;
+        public readonly IRepository<Categories, int> Reposity;
         public CategoriesService()
         {
-            Reposity = new Repository<Categories, int>(dbContext, dbContext.Categories);
+            Reposity = new Repository<Categories, int>(dbContext);
         }
     }
 }

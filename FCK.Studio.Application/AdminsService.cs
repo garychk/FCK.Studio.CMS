@@ -15,7 +15,7 @@ namespace FCK.Studio.Application
         public readonly Repository<Admins, int> Reposity;
         public AdminsService()
         {
-            Reposity = new Repository<Admins, int>(dbContext, dbContext.Admins);
+            Reposity = new Repository<Admins, int>(dbContext);
         }
 
         public async Task<ResultDto<string>> Login(string LoginName, string Password, int IP)

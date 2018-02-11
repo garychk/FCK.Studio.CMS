@@ -15,7 +15,7 @@ namespace FCK.Studio.Application
         public readonly Repository<Articles, long> Reposity;
         public ArticlesService()
         {
-            Reposity = new Repository<Articles, long>(dbContext, dbContext.Articles);
+            Reposity = new Repository<Articles, long>(dbContext);
         }
         
         public async Task<ResultDto<List<Articles>>> GetArticleWithCate(int PageIndex, int PageSize, Expression<Func<Articles, bool>> predicate)

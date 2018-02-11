@@ -13,10 +13,10 @@ namespace FCK.Studio.Repositories
     {
         private DbContext dbContext { get; set; }
         private IDbSet<TEntity> dbEntity { get; set; }
-        public Repository(DbContext _dbContext, IDbSet<TEntity> _dbEntity)
+        public Repository(DbContext _dbContext)
         {
             dbContext = _dbContext;
-            dbEntity = _dbEntity;
+            dbEntity = dbContext.Set<TEntity>();
         }
 
         ~Repository()
