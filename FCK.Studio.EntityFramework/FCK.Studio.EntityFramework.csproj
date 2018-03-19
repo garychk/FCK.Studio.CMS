@@ -76,6 +76,22 @@
     <Compile Include="Migrations\201709020131126_AddTableAdmin.Designer.cs">
       <DependentUpon>201709020131126_AddTableAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201803192122159_AddFieldUpdateTime.cs" />
+    <Compile Include="Migrations\201803192122159_AddFieldUpdateTime.Designer.cs">
+      <DependentUpon>201803192122159_AddFieldUpdateTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803192128515_AddFieldForArticle.cs" />
+    <Compile Include="Migrations\201803192128515_AddFieldForArticle.Designer.cs">
+      <DependentUpon>201803192128515_AddFieldForArticle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803192209100_AddFieldForArticle1.cs" />
+    <Compile Include="Migrations\201803192209100_AddFieldForArticle1.Designer.cs">
+      <DependentUpon>201803192209100_AddFieldForArticle1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803192212114_UpdateMembersField.cs" />
+    <Compile Include="Migrations\201803192212114_UpdateMembersField.Designer.cs">
+      <DependentUpon>201803192212114_UpdateMembersField.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -107,6 +123,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201709020131126_AddTableAdmin.resx">
       <DependentUpon>201709020131126_AddTableAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803192122159_AddFieldUpdateTime.resx">
+      <DependentUpon>201803192122159_AddFieldUpdateTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803192128515_AddFieldForArticle.resx">
+      <DependentUpon>201803192128515_AddFieldForArticle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803192209100_AddFieldForArticle1.resx">
+      <DependentUpon>201803192209100_AddFieldForArticle1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803192212114_UpdateMembersField.resx">
+      <DependentUpon>201803192212114_UpdateMembersField.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -64,6 +64,7 @@
     <Compile Include="CategoriesService.cs" />
     <Compile Include="FCKStudioAppBase.cs" />
     <Compile Include="IArticlesService.cs" />
+    <Compile Include="MembersService.cs" />
     <Compile Include="ProductsService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

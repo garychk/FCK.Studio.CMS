@@ -8,14 +8,19 @@ namespace FCK.Studio.EntityFramework
 
     public partial class FCKStudioDbContext : DbContext
     {
-        public FCKStudioDbContext(string ConnStr)
-            : base("name="+ ConnStr + "")
+        public FCKStudioDbContext(string ConnStr = "FCKStudioDbContext")
+            : base("name=" + ConnStr + "")
+        {
+        }
+        public FCKStudioDbContext()
+            : base("name=FCKStudioDbContext")
         {
         }
         public virtual IDbSet<Articles> Articles { get; set; }
         public virtual IDbSet<Products> Products { get; set; }
         public virtual IDbSet<Categories> Categories { get; set; }
         public virtual IDbSet<Admins> Admins { get; set; }
+        public virtual IDbSet<Members> Members { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
