@@ -12,7 +12,7 @@ namespace FCK.Studio.Application
 {
     public class AdminsService : FCKStudioAppBase
     {
-        public readonly Repository<Admins, int> Reposity;
+        public readonly IRepository<Admins, int> Reposity;
         public AdminsService()
         {
             Reposity = new Repository<Admins, int>(dbContext);

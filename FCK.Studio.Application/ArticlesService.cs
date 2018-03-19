@@ -12,7 +12,7 @@ namespace FCK.Studio.Application
 {
     public class ArticlesService: FCKStudioAppBase, IArticlesService
     {
-        public readonly Repository<Articles, long> Reposity;
+        public readonly IRepository<Articles, long> Reposity;
         public ArticlesService()
         {
             Reposity = new Repository<Articles, long>(dbContext);

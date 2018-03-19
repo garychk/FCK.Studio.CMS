@@ -1,6 +1,8 @@
-﻿using System;
+﻿using FCK.Studio.Dto;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -21,6 +23,7 @@ namespace FCK.Studio.Repositories
         IQueryable<TEntity> GetAll();
         List<TEntity> GetAllList();
         Task<List<TEntity>> GetAllListAsync();
+        Task<List<TEntity>> GetAllListAsync(Expression<Func<TEntity, bool>> predicate);
         TEntity Insert(TEntity entity);
         Task<TEntity> InsertAsync(TEntity entity);
         TPrimaryKey InsertAndGetId(TEntity entity);
@@ -31,5 +34,9 @@ namespace FCK.Studio.Repositories
         Task<TPrimaryKey> InsertOrUpdateAndGetIdAsync(TEntity entity);
         TEntity Update(TEntity entity);
         Task<TEntity> UpdateAsync(TEntity entity);
+        ResultDto<List<TEntity>> GetPageList(int PageIndex, int PageSize);
+        ResultDto<List<TEntity>> GetPageList(int PageIndex, int PageSize, Expression<Func<TEntity, bool>> predicate);
+        Task<ResultDto<List<TEntity>>> GetPageListAsync(int PageIndex, int PageSize);
+        Task<ResultDto<List<TEntity>>> GetPageListAsync(int PageIndex, int PageSize, Expression<Func<TEntity, bool>> predicate);
     }
 }

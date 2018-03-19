@@ -7,7 +7,8 @@
         {
             dbContext = new EntityFramework.FCKStudioDbContext("FCKStudioDbContext");
         }
-        ~FCKStudioAppBase()
+
+        public void Dispose()
         {
             dbContext.Dispose();
         }

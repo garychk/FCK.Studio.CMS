@@ -5,7 +5,7 @@ namespace FCK.Studio.Application
 {
     public class ProductsService : FCKStudioAppBase
     {
-        public readonly Repository<Products, long> Reposity;
+        public readonly IRepository<Products, long> Reposity;
         public ProductsService()
         {
             Reposity = new Repository<Products, long>(dbContext);
