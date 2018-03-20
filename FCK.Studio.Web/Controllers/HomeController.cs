@@ -16,6 +16,37 @@ namespace FCK.Studio.Web.Controllers
         {
             return View();
         }
+        public ActionResult login()
+        {
+            return View();
+        }
+
+        public ActionResult Dashboard()
+        {
+            return View();
+        }
+
+        public ActionResult NotFound()
+        {
+            return View();
+        }
+
+        public ActionResult Category()
+        {
+            return View();
+        }
+        public ActionResult Article()
+        {
+            return View();
+        }
+        public ActionResult ArticleEdit()
+        {
+            return View();
+        }
+        public ActionResult Comment()
+        {
+            return View();
+        }
 
         public void Test()
         {
