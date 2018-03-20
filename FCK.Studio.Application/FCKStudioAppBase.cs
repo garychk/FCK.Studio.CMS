@@ -1,6 +1,8 @@
-﻿namespace FCK.Studio.Application
+﻿using System;
+
+namespace FCK.Studio.Application
 {
-    public class FCKStudioAppBase
+    public class FCKStudioAppBase: IDisposable
     {
         protected EntityFramework.FCKStudioDbContext dbContext;
         public FCKStudioAppBase()
