@@ -92,6 +92,18 @@
     <Compile Include="Migrations\201803192212114_UpdateMembersField.Designer.cs">
       <DependentUpon>201803192212114_UpdateMembersField.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201803200629085_UpdateModel.cs" />
+    <Compile Include="Migrations\201803200629085_UpdateModel.Designer.cs">
+      <DependentUpon>201803200629085_UpdateModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803200631493_AddTenants.cs" />
+    <Compile Include="Migrations\201803200631493_AddTenants.Designer.cs">
+      <DependentUpon>201803200631493_AddTenants.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803200652343_AddComment.cs" />
+    <Compile Include="Migrations\201803200652343_AddComment.Designer.cs">
+      <DependentUpon>201803200652343_AddComment.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -135,6 +147,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201803192212114_UpdateMembersField.resx">
       <DependentUpon>201803192212114_UpdateMembersField.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803200629085_UpdateModel.resx">
+      <DependentUpon>201803200629085_UpdateModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803200631493_AddTenants.resx">
+      <DependentUpon>201803200631493_AddTenants.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803200652343_AddComment.resx">
+      <DependentUpon>201803200652343_AddComment.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

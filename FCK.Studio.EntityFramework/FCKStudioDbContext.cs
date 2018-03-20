@@ -21,6 +21,8 @@ namespace FCK.Studio.EntityFramework
         public virtual IDbSet<Categories> Categories { get; set; }
         public virtual IDbSet<Admins> Admins { get; set; }
         public virtual IDbSet<Members> Members { get; set; }
+        public virtual IDbSet<Tenants> Tenants { get; set; }
+        public virtual IDbSet<Comments> Comments { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

@@ -28,15 +28,20 @@ namespace FCK.Studio.Core
         public int TenantId { get; set; }
         [Required, MaxLength(500)]
         public string Title { get; set; }
-
         public long? CreatorUserId { get; set; }
         [DefaultValue(0)]
         public int Hits { get; set; }
         public bool IsTop { get; set; }
-        public bool IsSignUp { get; set; }
-        public int Enrolment { get; set; }
+        public bool IsHot { get; set; }
+        public bool IsRecommend { get; set; }
+        public bool IsChecked { get; set; }
         [MaxLength(50)]
         public string Author { get; set; }
+        [MaxLength(200)]
+        public string LinkUrl { get; set; }
+        [MaxLength(200)]
+        public string FileUrl { get; set; }
+        public int CheckedLevel { get; set; }
         public Articles()
         {
             CreationTime = DateTime.Now;

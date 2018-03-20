@@ -44,9 +44,11 @@
     <Compile Include="Admins.cs" />
     <Compile Include="Articles.cs" />
     <Compile Include="Categories.cs" />
+    <Compile Include="Comments.cs" />
     <Compile Include="Products.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Members.cs" />
+    <Compile Include="Tenants.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FCK.Studio\FCK.Studio.csproj">
