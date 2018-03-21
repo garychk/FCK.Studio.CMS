@@ -5,7 +5,7 @@ using System.Web;
 
 namespace FCK.Studio.Web.Dto
 {
-    public class Articles
+    public class ArticleInput
     {
         //public int CategoryId { get; set; }
         public string Contents { get; set; }

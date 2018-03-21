@@ -52,7 +52,7 @@
             <!-- /.box-body -->
             <div class="box-footer">
                 <input type="hidden" v-model="Id">
-                <button type="submit" class="btn btn-primary" v-on:click="dosubmit">发布</button>
+                <button type="button" class="btn btn-primary" v-on:click="dosubmit">发布</button>
                 <button type="button" class="btn btn-default" v-on:click="reset">重置</button>
             </div>
         </form>
@@ -61,7 +61,7 @@
 <!-- /.content -->
 <script> 
     
-    $.post('/Home/TestGetModel', {}, function (response) {
+    $.post('/Articles/GetModel', {}, function (response) {
         Vue.use(VueHtml5Editor, {
             showModuleName: false
         })
@@ -73,7 +73,15 @@
                     response.Contents = data
                 },
                 dosubmit: function () {
-
+                    $.ajax({
+                        url: '/Articles/InsertOrUpdate',
+                        type: "POST",
+                        data: response,
+                        success: function (data) {
+                            console.log(data);
+                        }
+                    });
+                    return false;
                 },
                 reset: function () {
                     
