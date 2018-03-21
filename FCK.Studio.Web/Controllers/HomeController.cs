@@ -88,5 +88,21 @@ namespace FCK.Studio.Web.Controllers
                 return Json(result);
             }
         }
+        
+        public JsonResult TestGetModel()
+        {
+            using (ArticlesService Article = new ArticlesService())
+            {
+                Articles model = new Articles();
+                model.Title = "vue title";
+                model.Contents = "vue Contents";
+                //调用Service自身的函数
+                var result = Article.Reposity.FirstOrDefault(1);
+                if (result != null)
+                    model = result;
+                //以JSON格式返回数据到View
+                return Json(model);
+            }
+        }
     }
 }

@@ -3,23 +3,21 @@
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_LayoutPage.cshtml";
 }
-    <div class="wrapper">
-        @Html.Partial("~/Views/Shared/_PartialHeader.cshtml")
-        <!-- Left side column. contains the logo and sidebar -->
-        @Html.Partial("~/Views/Shared/_PartialLefSide.cshtml")
-        <!-- Content Wrapper. Contains page content -->
-        <div class="content-wrapper">
-            <iframe id="frmMain" name="frmMain" scrolling="no" frameborder="0" src="/Home/Dashboard" style="width:100%; height:1024px"></iframe>
-        </div>
-            <!-- /.content-wrapper -->
-            @Html.Partial("~/Views/Shared/_PartialFooter.cshtml")
-            <!-- Control Sidebar -->
-            @Html.Partial("~/Views/Shared/_PartialSidebar.cshtml")
-            <!-- /.control-sidebar -->
-            <!-- Add the sidebar's background. This div must be placed
-             immediately after the control sidebar -->
-            <div class="control-sidebar-bg"></div>
-        </div>
-    <!-- ./wrapper -->
-
-
+<div class="wrapper">
+    @Html.Partial("~/Views/Shared/_PartialHeader.cshtml")
+    <!-- Left side column. contains the logo and sidebar -->
+    @Html.Partial("~/Views/Shared/_PartialLefSide.cshtml")
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper" id="content-wrapper">
+        @*<iframe id="frmMain" name="frmMain" scrolling="no" frameborder="0" src="/Home/Dashboard" style="width:100%; height:1024px"></iframe>*@        
+    </div>
+    <!-- /.content-wrapper -->
+    @Html.Partial("~/Views/Shared/_PartialFooter.cshtml")
+    <!-- Control Sidebar -->
+    @Html.Partial("~/Views/Shared/_PartialSidebar.cshtml")
+    <!-- /.control-sidebar -->
+    <!-- Add the sidebar's background. This div must be placed
+     immediately after the control sidebar -->
+    <div class="control-sidebar-bg"></div>
+</div>
+<!-- ./wrapper -->

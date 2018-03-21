@@ -37,9 +37,6 @@
     <![endif]-->
     <!-- Google Font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
-</head>
-<body class="hold-transition skin-blue sidebar-mini">
-    @RenderBody()
     <!-- jQuery 3 -->
     <script src="/bower_components/jquery/dist/jquery.min.js"></script>
     <!-- jQuery UI 1.11.4 -->
@@ -50,9 +47,7 @@
     </script>
     <!-- Bootstrap 3.3.7 -->
     <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <!-- Morris.js charts -->
-    <script src="/bower_components/raphael/raphael.min.js"></script>
-    <script src="/bower_components/morris.js/morris.min.js"></script>
+    
     <!-- Sparkline -->
     <script src="/bower_components/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
     <!-- jvectormap -->
@@ -73,10 +68,16 @@
     <script src="/bower_components/fastclick/lib/fastclick.js"></script>
     <!-- AdminLTE App -->
     <script src="/dist/js/adminlte.min.js"></script>
-    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-    
-    <!-- AdminLTE for demo purposes -->
-    <script src="/dist/js/demo.js"></script>
+    <!-- vue.js -->
+    <script src="/dist/js/vue.js"></script>
+    <script src="/dist/js/vue-html5-editor.js"></script>
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+    @RenderBody()
     @RenderSection("scripts", required: false)
+    <!-- AdminLTE for demo purposes -->
+    <script src="/dist/js/adminlay.js"></script>
+    
+    
 </body>
 </html>

@@ -102,6 +102,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="dist\js\adminlte.js" />
+    <Content Include="dist\js\adminlte.min.js" />
+    <Content Include="dist\js\adminlay.js" />
+    <Content Include="dist\js\pages\dashboard.js" />
+    <Content Include="dist\js\pages\dashboard2.js" />
+    <Content Include="dist\js\vue-html5-editor.js" />
+    <Content Include="dist\js\vue.js" />
+    <Content Include="dist\js\vue.min.js" />
     <Content Include="Global.asax" />
     <Content Include="plugins\bootstrap-slider\bootstrap-slider.js" />
     <Content Include="plugins\bootstrap-slider\slider.css" />
@@ -289,8 +297,8 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="bower_components\" />
-    <Folder Include="dist\" />
     <Folder Include="Models\" />
+    <Folder Include="Views\Articles\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FCK.Studio.Application\FCK.Studio.Application.csproj">
