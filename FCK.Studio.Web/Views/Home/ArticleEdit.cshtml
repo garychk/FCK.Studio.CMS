@@ -61,7 +61,7 @@
 <!-- /.content -->
 <script> 
     
-    $.post('/Articles/GetModel', {}, function (response) {
+    $.post('/Articles/GetModel', { id :0}, function (response) {
         Vue.use(VueHtml5Editor, {
             showModuleName: false
         })

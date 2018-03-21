@@ -110,6 +110,7 @@
     <Content Include="dist\js\vue-html5-editor.js" />
     <Content Include="dist\js\vue.js" />
     <Content Include="dist\js\vue.min.js" />
+    <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="plugins\bootstrap-slider\bootstrap-slider.js" />
     <Content Include="plugins\bootstrap-slider\slider.css" />
